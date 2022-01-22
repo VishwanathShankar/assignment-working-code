@@ -1,0 +1,88 @@
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    color: white;
+}
+
+i.fa {
+    color: #3b5998;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.normal-login {
+    color: black !important;
+    border: gray solid 1px !important;
+    margin-top: 2px;
+}
+
+.user {
+    float: right;
+    font-weight: bold;
+    margin-right: 60px;
+    margin-top: 15PX;
+    font-family: cursive;
+}
+
+.user-icon {
+    padding: 0px 20px 7px 0px !important;
+    color: forestgreen;
+}
+
+.google {
+    color: black !important;
+    border: gray solid 1px !important;
+}
+
+.google div {
+    padding: 0px 0px 0px 10px !important;
+}
+
+.google span {
+    padding: 5px 30px 5px 0px !important;
+}
+
+.login-heading {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.s-logo {
+    text-align: center;
+    font-size: 25px;
+    color: red;
+    background: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1%;
+    margin-left: 2%;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.login-block {
+    float: right;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+.login {
+    margin: 25px;
+    font-weight: bold;
+}
+
+.signUp {
+    font-weight: bold;
+    border: solid 1px white;
+    padding: 3px;
+}
