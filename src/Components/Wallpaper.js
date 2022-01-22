@@ -83,7 +83,7 @@ class Wallpaper extends React.Component {
                     <select className="locationDropdown" onChange={this.handleChange}>
                         <option value="0">Select</option>
                         {locations.map((item, index) => {
-                            return <option key={index} value={`${item.location_id}-${item.city_id}`}>{`${item.name}, ${item.city}`}</option>
+                            return <option key={index} value={`${item.location_id}-${item.city_id}`}>{`${item.name}`}</option>
                         })}
                     </select>
 
