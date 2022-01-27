@@ -157,6 +157,17 @@ class Details extends React.Component {
                                     <div class="value">{`${restaurant.locality}, ${restaurant.city}`}</div>
                                 </div>
                             </div>
+                            {/* Tab-3 */}
+                            <div class="tab">
+                                <input type="radio" id="tab-2" name="tab-group-1" />
+                                <label for="tab-2">Test-label</label>
+                                <div class="content">
+                                    <div class="head">Some content for tab 3</div>
+                                    <div class="value">{restaurant.contact_number}</div>
+                                    <div class="head">{restaurant.name}</div>
+                                    <div class="value">{`${restaurant.locality}, ${restaurant.city}`}</div>
+                                </div>
+                            </div>
                         </div>
                         {/* Modal within which we will show the carousal of Images*/}
                         <Modal

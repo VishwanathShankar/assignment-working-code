@@ -112,6 +112,9 @@ class Header extends React.Component {
     }
 
     responseGoogle = (response) => {
+        console.log("Before Another line");
+        console.log(response);
+        console.log("Another line");
         console.log(response.profileObj.name);
     }
 
@@ -152,7 +155,8 @@ class Header extends React.Component {
                         <div class="login-heading">Login</div>
                         <div style={{ marginBottom: '2px' }}>
                             <GoogleLogin
-                                clientId="745717577080-5uo0jrq7g23qqioe155h28u94a0co1cj.apps.googleusercontent.com"
+                                //clientId="745717577080-5uo0jrq7g23qqioe155h28u94a0co1cj.apps.googleusercontent.com"
+                                clientId="727679718346-h151gkku5qku3oim20rof96d8h29l8nm.apps.googleusercontent.com"
                                 buttonText="Continue with Gmail"
                                 onSuccess={this.responseGoogle}
                                 onFailure={this.responseGoogle}
