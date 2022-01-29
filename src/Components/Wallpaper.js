@@ -72,7 +72,7 @@ class Wallpaper extends React.Component {
         const { text } = this.state;
         return (
             <div>
-                <img src={require('../Assets/homepageimg.png')} style={{ width: '100%', height: '450px', margin: 'auto' }} />
+                <img src={require('../assets/homepageimg.png')} style={{ width: '100%', height: '450px', margin: 'auto' }} />
                 <div className="logo">
                     <p>e!</p>
                 </div>

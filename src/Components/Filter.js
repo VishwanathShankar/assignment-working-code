@@ -320,7 +320,7 @@ class Filter extends React.Component {
                                     return <div className="Item" onClick={() => this.handleClick(item._id)}>
                                         <div className="row pl-1">
                                             <div className="col-sm-4 col-md-4 col-lg-4">
-                                                <img className="img" src={require('../Assets/breakfast.jpg')} />
+                                                <img className="img" src={require('../assets/breakfast.jpg')} />
                                             </div>
                                             <div className="col-sm-8 col-md-8 col-lg-8">
                                                 <div className="rest-name">{item.name}</div>
