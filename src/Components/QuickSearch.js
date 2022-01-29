@@ -19,6 +19,7 @@ class QuickSearch extends React.Component {
                         <div className="row">
                             {mealtypes.map((item) => {
                                 return <QuickSearchItem id={item.meal_type} name={item.name} content={item.content} image={item.image} />
+                                //return <div> {item.name} </div>
                             })}
                         </div>
                     </div>

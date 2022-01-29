@@ -16,7 +16,7 @@ class QuickSearchItem extends React.Component {
             <div className="col-sm-12 col-md-12 col-lg-4" onClick={() => this.handleClick(id)}>
                 <div className="tileContainer">
                     <div className="tileComponent1">
-                        <img src={require('../' + image)} height="150" width="140" />
+                        <img src={require("../" +image)} height="150" width="140" />
                     </div>
                     <div className="tileComponent2">
                         <div className="componentHeading">
