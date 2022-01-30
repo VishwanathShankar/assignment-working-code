@@ -3,6 +3,7 @@ import '../Styles/home.css';
 import Wallpaper from './Wallpaper';
 import QuickSearch from './QuickSearch';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 
 class Home extends React.Component {
@@ -10,7 +11,8 @@ class Home extends React.Component {
         super();
         this.state = {
             locations: [],
-            mealtypes: []
+            mealtypes: [],
+            routeUrl: ''
         }
     }
 
@@ -18,6 +20,9 @@ class Home extends React.Component {
 
         sessionStorage.setItem('area', undefined);
         sessionStorage.setItem('city', undefined);
+        this.setState({
+            routeUrl: "restaurantdetailspage"
+        });
 
         axios({
             method: 'GET',
@@ -36,9 +41,13 @@ class Home extends React.Component {
     }
 
     render() {
-        const { locations, mealtypes } = this.state;
+        const { locations, mealtypes, routeUrl } = this.state;
+        const newURL = "/" + routeUrl + "?testQueryparm=Vishwanath"
         return (
             <React.Fragment>
+                <Link to={newURL}>Dynamic URL</Link>
+                <div></div>
+                <Link to="/restaurantsearchpage?testKey=testValue&mealtype=1&area=&city=">restaurantsearchpage</Link>
                 <Wallpaper locations={locations} />
                 <QuickSearch mealtypes={mealtypes} />
             </React.Fragment>

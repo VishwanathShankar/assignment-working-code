@@ -160,6 +160,8 @@ class Filter extends React.Component {
 
         // Update the URL basis the changed selections
         this.props.history.push(`/restaurantsearchpage?area=${location}&cuisine=${cuisine}&mealtype=${mealtype}&costlessthan=${hcost}&costmorethan=${lcost}&page=${page}&sort=${sort}`);
+        console.log("Filter payload");
+        console.log(filterObj);
 
         axios({
             method: 'POST',
@@ -238,6 +240,8 @@ class Filter extends React.Component {
 
     render() {
         const { restaurantList, locationList, pageCount, sort } = this.state;
+        console.log("Rest list is ");
+        console.log(restaurantList);
         return (
             <div>
                 <div id="myId" className="heading-filter">Breakfast Places in Delhi</div>
@@ -331,7 +335,7 @@ class Filter extends React.Component {
                                         <hr />
                                         <div className="row padding-left">
                                             <div className="col-sm-12 col-md-12 col-lg-12">
-                                                <div className="rest-address">CUISINES : {item.cuisine.map((item) => item.name + ', ')}</div>
+                                                
                                                 <div className="rest-address">COST FOR TWO : {item.min_price} </div>
                                             </div>
                                         </div>
