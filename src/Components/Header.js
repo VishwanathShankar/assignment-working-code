@@ -64,7 +64,7 @@ class Header extends React.Component {
         };
         axios({
             method: 'POST',
-            url: 'http://localhost:6503/api/signup',
+            url: 'http://20.127.128.75:6503/api/signup',
             headers: { 'Content-Type': 'application/json' },
             data: signUpObj
         })
@@ -91,7 +91,7 @@ class Header extends React.Component {
         };
         axios({
             method: 'GET',
-            url: 'http://localhost:6503/api/login',
+            url: 'http://20.127.128.75:6503/api/login',
             headers: { 'Content-Type': 'application/json' },
             data: loginObj
         })

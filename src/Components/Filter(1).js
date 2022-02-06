@@ -43,7 +43,7 @@ class Filter extends React.Component {
         // Making Filter API Call 
         axios({
             method: 'POST',
-            url: 'http://localhost:6503/api/restaurantfilter',
+            url: 'http://20.127.128.75:6503/api/restaurantfilter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -58,7 +58,7 @@ class Filter extends React.Component {
         // Making location API Call to bind the values in location dropdown
         axios({
             method: 'GET',
-            url: 'http://localhost:6503/api/cityList',
+            url: 'http://20.127.128.75:6503/api/cityList',
             headers: { 'Content-Type': 'application/json' }
         }).then(res => this.setState({ locationList: res.data.city }))
             .catch(err => console.log(err))
@@ -93,7 +93,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:6503/api/restaurantfilter',
+            url: 'http://20.127.128.75:6503/api/restaurantfilter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -124,7 +124,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:6503/api/restaurantfilter',
+            url: 'http://20.127.128.75:6503/api/restaurantfilter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -163,7 +163,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:6503/api/restaurantfilter',
+            url: 'http://20.127.128.75:6503/api/restaurantfilter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -193,7 +193,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:6503/api/restaurantfilter',
+            url: 'http://20.127.128.75:6503/api/restaurantfilter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -223,7 +223,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:6503/api/restaurantfilter',
+            url: 'http://20.127.128.75:6503/api/restaurantfilter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })

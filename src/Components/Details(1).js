@@ -46,7 +46,7 @@ class Details extends React.Component {
         const restaurantId = queryParams.restaurant;
         axios({
             method: 'GET',
-            url: `http://localhost:6503/api/getResById/${restaurantId}`,
+            url: `http://20.127.128.75:6503/api/getResById/${restaurantId}`,
             headers: { 'Content-Type': 'application/json' }
         }).then(res => this.setState({ restaurant: res.data.restaurant, restaurantId: restaurantId }))
             .catch(err => console.log(err))
@@ -104,7 +104,7 @@ class Details extends React.Component {
 
     getData = (data) => {
 
-        return fetch(`http://localhost:6503/api/payment`, {
+        return fetch(`http://20.127.128.75:6503/api/payment`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -129,7 +129,7 @@ class Details extends React.Component {
         const { restaurantId } = this.state;
         axios({
             method: 'GET',
-            url: `http://localhost:6503/api/getItemsbyrestaurant/${restaurantId}`,
+            url: `http://20.127.128.75:6503/api/getItemsbyrestaurant/${restaurantId}`,
             headers: { 'Content-Type': 'application/json' }
         }).then(res => this.setState({ items: res.data.itemsList, orderModalIsOpen: true }))
             .catch(err => console.log(err))

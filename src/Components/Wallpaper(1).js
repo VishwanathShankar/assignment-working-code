@@ -60,7 +60,7 @@ class Wallpaper extends React.Component {
 
         axios({
             method: 'GET',
-            url: `http://localhost:6503/api/getRestaurantsbycity/${area}`,
+            url: `http://20.127.128.75:6503/api/getRestaurantsbycity/${area}`,
             headers: { 'Content-Type': 'application/json' }
         }).then(res => this.setState({ restaurants: res.data.restaurantList }))
             .catch(err => console.log(err))

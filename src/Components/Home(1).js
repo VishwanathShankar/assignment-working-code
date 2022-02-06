@@ -21,7 +21,7 @@ class Home extends React.Component {
 
         axios({
             method: 'GET',
-            url: 'http://localhost:6503/api/cityList',
+            url: 'http://20.127.128.75:6503/api/cityList',
             headers: { 'Content-Type': 'application/json' }
         }).then(res => this.setState({ locations: res.data.city }))
             .catch(err => console.log(err))
@@ -29,7 +29,7 @@ class Home extends React.Component {
 
         axios({
             method: 'GET',
-            url: ' http://localhost:6503/api/mealtype',
+            url: ' http://20.127.128.75:6503/api/mealtype',
             headers: { 'Content-Type': 'application/json' }
         }).then(response => this.setState({ mealtypes: response.data.mealtype }))
             .catch(err => console.log(err))
